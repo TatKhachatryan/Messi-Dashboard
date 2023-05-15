@@ -10,21 +10,23 @@ import plotly.graph_objects as go
 colorScheme = ['#212529', '#343A40', '#495057', '#6C757D', '#ADB5BD', '#F8F9FA', '#E9ECEF', '#DEE2E6', '#CED4DA']
 colorScheme2 = ['#71093B', '#023578', '#990B52', '#CB8B15', '#FFFFFF', '#EAAA34', '#F1F4F9', '#749ED2', '#022450', '#467EC3']
 
-all_time_games = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='all_time_games')
-all_time_goals = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='all_time_goals')
-first_goal_of_the_game = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='first_goal_of_the_game')
-last_goal_of_the_game = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='last_goal_of_the_game')
-first_goal_of_the_team = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='first_goal_of_the_team')
-last_goal_of_the_team = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='last_goal_of_the_team')
-game_decider = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='game_decider')
-stoppage_time_goals = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='stoppage_time_goals')
-Camp_Nou_goals = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='Camp_Nou_goals')
-wins = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='wins')
-draws = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='draws')
-loses = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='loses')
-assists_to = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='assists_to')
-assists_from = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='assists_from')
-opponents = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='opponents')
+data_source = "https://github.com/TatKhachatryan/Messi-Dashboard/blob/3704653279ea2720e5606223efead05217940613/messi_starplayerstats.xlsx"
+
+all_time_games = pd.read_excel(data_source, sheet_name='all_time_games')
+all_time_goals = pd.read_excel(data_source, sheet_name='all_time_goals')
+first_goal_of_the_game = pd.read_excel(data_source, sheet_name='first_goal_of_the_game')
+last_goal_of_the_game = pd.read_excel(data_source, sheet_name='last_goal_of_the_game')
+first_goal_of_the_team = pd.read_excel(data_source, sheet_name='first_goal_of_the_team')
+last_goal_of_the_team = pd.read_excel(data_source, sheet_name='last_goal_of_the_team')
+game_decider = pd.read_excel(data_source, sheet_name='game_decider')
+stoppage_time_goals = pd.read_excel(data_source, sheet_name='stoppage_time_goals')
+Camp_Nou_goals = pd.read_excel(data_source, sheet_name='Camp_Nou_goals')
+wins = pd.read_excel(data_source, sheet_name='wins')
+draws = pd.read_excel(data_source, sheet_name='draws')
+loses = pd.read_excel(data_source, sheet_name='loses')
+assists_to = pd.read_excel(data_source, sheet_name='assists_to')
+assists_from = pd.read_excel(data_source, sheet_name='assists_from')
+opponents = pd.read_excel(data_source, sheet_name='opponents')
 
 # get rid of the last unnecessary column
 # all_time_games = all_time_games[all_time_games.columns[:-1]]
