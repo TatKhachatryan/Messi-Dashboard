@@ -333,6 +333,7 @@ app.layout = html.Div([
     html.Div([html.H6(children="Select Season:", style={'textAlign':'left','marginLeft': 10, "font-weight": "bold"}),
               dcc.Dropdown(options=[{'label': i, 'value': i} for i in goals_what['Season'].unique()],
                            value=['2020-21', '2021-22', '2022-23'],
+                           multi=True,
                            clearable=False,
                            disabled=False,
                            style=dict(width='50%', display='inline-block'),
