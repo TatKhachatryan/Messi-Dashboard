@@ -44,22 +44,22 @@ opponents = pd.read_excel("messi_starplayerstats.xlsx", sheet_name='opponents')
 # opponents = opponents[opponents.columns[:-1]]
 
 # change column names to convenient names
-all_time_games.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey', 'col']
-all_time_goals.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey', 'col']
-first_goal_of_the_game.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey', 'col']
-last_goal_of_the_game.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey', 'col']
-first_goal_of_the_team.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey', 'col']
-# last_goal_of_the_team.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey', 'col']
-game_decider.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey', 'col']
-# stoppage_time_goals.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey', 'col']
-Camp_Nou_goals.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'col']
-wins.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey', 'col']
-draws.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey', 'col']
-loses.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey', 'col']
-assists_to.columns = ['#', 'Date', 'Competition', 'Home', 'Result', 'Away', 'Minute', 'Assist on', 'Score', 'col']
-assists_from.columns = ['#', 'Date', 'Competition', 'Home', 'Result', 'Away', 'Minute', 'Assist on', 'Score', 'col']
+all_time_games.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey']
+all_time_goals.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
+first_goal_of_the_game.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
+last_goal_of_the_game.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
+first_goal_of_the_team.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
+# last_goal_of_the_team.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
+game_decider.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
+# stoppage_time_goals.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
+Camp_Nou_goals.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards']
+wins.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey']
+draws.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey']
+loses.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey']
+assists_to.columns = ['#', 'Date', 'Competition', 'Home', 'Result', 'Away', 'Minute', 'Assist on', 'Score']
+assists_from.columns = ['#', 'Date', 'Competition', 'Home', 'Result', 'Away', 'Minute', 'Assist on', 'Score']
 opponents.columns = ['#', 'Opponents', 'Country', 'Games', 'Wins', 'Draws', 'Defeats', 'Winning percentage',
-                     'Goals', 'Coefficient', 'Assists', 'Cards', 'Penalties', 'Penalties missed', 'col']
+                     'Goals', 'Coefficient', 'Assists', 'Cards', 'Penalties', 'Penalties missed']
 
 
 # convert Date to datetime
