@@ -12,21 +12,21 @@ colorScheme2 = ['#71093B', '#023578', '#990B52', '#CB8B15', '#FFFFFF', '#EAAA34'
 
 data_source = "https://github.com/TatKhachatryan/Messi-Dashboard/blob/3704653279ea2720e5606223efead05217940613/messi_starplayerstats.xlsx"
 
-all_time_games = pd.read_excel(data_source, sheet_name='all_time_games')
-all_time_goals = pd.read_excel(data_source, sheet_name='all_time_goals')
-first_goal_of_the_game = pd.read_excel(data_source, sheet_name='first_goal_of_the_game')
-last_goal_of_the_game = pd.read_excel(data_source, sheet_name='last_goal_of_the_game')
-first_goal_of_the_team = pd.read_excel(data_source, sheet_name='first_goal_of_the_team')
-last_goal_of_the_team = pd.read_excel(data_source, sheet_name='last_goal_of_the_team')
-game_decider = pd.read_excel(data_source, sheet_name='game_decider')
-stoppage_time_goals = pd.read_excel(data_source, sheet_name='stoppage_time_goals')
-Camp_Nou_goals = pd.read_excel(data_source, sheet_name='Camp_Nou_goals')
-wins = pd.read_excel(data_source, sheet_name='wins')
-draws = pd.read_excel(data_source, sheet_name='draws')
-loses = pd.read_excel(data_source, sheet_name='loses')
-assists_to = pd.read_excel(data_source, sheet_name='assists_to')
-assists_from = pd.read_excel(data_source, sheet_name='assists_from')
-opponents = pd.read_excel(data_source, sheet_name='opponents')
+all_time_games = pd.read_excel(data_source, engine="openpyxl", sheet_name='all_time_games')
+all_time_goals = pd.read_excel(data_source, engine="openpyxl", sheet_name='all_time_goals')
+first_goal_of_the_game = pd.read_excel(data_source, engine="openpyxl", sheet_name='first_goal_of_the_game')
+last_goal_of_the_game = pd.read_excel(data_source, engine="openpyxl", sheet_name='last_goal_of_the_game')
+first_goal_of_the_team = pd.read_excel(data_source, engine="openpyxl", sheet_name='first_goal_of_the_team')
+last_goal_of_the_team = pd.read_excel(data_source, engine="openpyxl", sheet_name='last_goal_of_the_team')
+game_decider = pd.read_excel(data_source, engine="openpyxl", sheet_name='game_decider')
+stoppage_time_goals = pd.read_excel(data_source, engine="openpyxl", sheet_name='stoppage_time_goals')
+Camp_Nou_goals = pd.read_excel(data_source, engine="openpyxl", sheet_name='Camp_Nou_goals')
+wins = pd.read_excel(data_source, engine="openpyxl", sheet_name='wins')
+draws = pd.read_excel(data_source, engine="openpyxl", sheet_name='draws')
+loses = pd.read_excel(data_source, engine="openpyxl", sheet_name='loses')
+assists_to = pd.read_excel(data_source, engine="openpyxl", sheet_name='assists_to')
+assists_from = pd.read_excel(data_source, engine="openpyxl", sheet_name='assists_from')
+opponents = pd.read_excel(data_source, engine="openpyxl", sheet_name='opponents')
 
 # get rid of the last unnecessary column
 # all_time_games = all_time_games[all_time_games.columns[:-1]]
