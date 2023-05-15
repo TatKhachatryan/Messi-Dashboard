@@ -268,7 +268,7 @@ external_stylesheets = [dbc.themes.SIMPLEX]
 
 app = Dash(__name__, external_stylesheets=external_stylesheets,
            meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}])
-server = app.server()
+server = app.server
 app.title = 'Lionel Messi Dashboard'
 
 app.layout = html.Div([
@@ -427,7 +427,7 @@ def update_graph3(value_team):
 app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'})
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=False)
 
 
 
