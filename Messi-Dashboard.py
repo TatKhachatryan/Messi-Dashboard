@@ -17,9 +17,6 @@ all_time_goals = pd.read_excel(data_source, engine="openpyxl", sheet_name='all_t
 first_goal_of_the_game = pd.read_excel(data_source, engine="openpyxl", sheet_name='first_goal_of_the_game')
 last_goal_of_the_game = pd.read_excel(data_source, engine="openpyxl", sheet_name='last_goal_of_the_game')
 first_goal_of_the_team = pd.read_excel(data_source, engine="openpyxl", sheet_name='first_goal_of_the_team')
-last_goal_of_the_team = pd.read_excel(data_source, engine="openpyxl", sheet_name='last_goal_of_the_team')
-game_decider = pd.read_excel(data_source, engine="openpyxl", sheet_name='game_decider')
-stoppage_time_goals = pd.read_excel(data_source, engine="openpyxl", sheet_name='stoppage_time_goals')
 Camp_Nou_goals = pd.read_excel(data_source, engine="openpyxl", sheet_name='Camp_Nou_goals')
 wins = pd.read_excel(data_source, engine="openpyxl", sheet_name='wins')
 draws = pd.read_excel(data_source, engine="openpyxl", sheet_name='draws')
@@ -51,9 +48,6 @@ all_time_goals.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'A
 first_goal_of_the_game.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
 last_goal_of_the_game.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
 first_goal_of_the_team.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
-# last_goal_of_the_team.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
-game_decider.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
-# stoppage_time_goals.columns = ['#', 'Date', 'Competition', 'Home team',  'Result', 'Away team', 'Minute', 'Score', 'What', 'How', 'Jersey']
 Camp_Nou_goals.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards']
 wins.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey']
 draws.columns = ['#', 'Date', 'Competition', 'Home team', 'Result', 'Away team', 'Lineup', 'Minutes', 'Goals', 'Assists', 'Cards', 'Jersey']
