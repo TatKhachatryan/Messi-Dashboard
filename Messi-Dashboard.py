@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 colorScheme = ['#212529', '#343A40', '#495057', '#6C757D', '#ADB5BD', '#F8F9FA', '#E9ECEF', '#DEE2E6', '#CED4DA']
 colorScheme2 = ['#71093B', '#023578', '#990B52', '#CB8B15', '#FFFFFF', '#EAAA34', '#F1F4F9', '#749ED2', '#022450', '#467EC3']
 
-data_source = "https://github.com/TatKhachatryan/Messi-Dashboard/blob/3704653279ea2720e5606223efead05217940613/messi_starplayerstats.xlsx"
+data_source = r"https://github.com/TatKhachatryan/Messi-Dashboard/blob/3704653279ea2720e5606223efead05217940613/messi_starplayerstats.xlsx?raw=true"
 
 all_time_games = pd.read_excel(data_source, engine="openpyxl", sheet_name='all_time_games')
 all_time_goals = pd.read_excel(data_source, engine="openpyxl", sheet_name='all_time_goals')
